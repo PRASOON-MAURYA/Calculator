@@ -9,43 +9,46 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(103, 232, 255, 0.534);
+    background-color: rgb(237, 219, 196);
 }
 
 .container {
-    border: 10px solid black;
-    border-radius: 2rem;
+    border: .25rem solid black;
     width: auto;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: rgb(116, 202, 255);
+    border-radius: .5rem;
+    padding: 1rem .5rem;
 }
 
 #screen {
-    background-color: rgb(255, 189, 189);
+    background-color: #ffb0eb;
     border-radius: 1vh;
-    border: 4px solid rgb(255, 0, 0);
-    height: 10vh;
-    width: 95%;
-    margin: 2vh 0vw;
+    border: 4px solid #ff46d1;
+    height:5rem;
+    margin: 1rem 0vw;
+    font-size: 2.20rem;
+    color: red;
 }
 
 table {
-    background-color: rgb(222, 182, 255);
-    border-radius: 1vh;
-    border: 4px solid blue;
-    margin: 1vh 0vw;
+    background-color: rgb(199, 131, 255);
+    border-radius: .5rem;
+    border: 4px solid rgb(161, 45, 255);
+    margin: .5rem 0vw;
 }
 
 button {
-    height: 10vh;
-    width: 12vh;
-    margin: 1vh .5vw;
-    border-radius: 1.5vh;
-    margin-bottom: 0vh;
-    font-size: 5vh;
+    height: 5rem;
+    width: 6rem;
+    margin: .5rem .25vw;
+    border: .25rem solid #4CAF50;
+    border-radius: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 600;
     background: rgb(255, 255, 255);
 }
@@ -62,10 +65,17 @@ button {
     color: rgb(46, 228, 0);
 }
 
-#screen {
-    font-size: 4.5vh;
-}
-
 #extra {
     color: rgb(0, 104, 202);
 }
+@media only screen and (max-width: 540px) {
+    button {
+        height: 3rem;
+        width: 4rem;
+        font-size: 1.5rem;
+        margin: .5rem .25rem;
+    }
+    #screen{        
+    font-size: 1.5rem;
+    }
+  }
